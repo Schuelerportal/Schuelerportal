@@ -1,4 +1,8 @@
-* body {
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Open Sans', sans-serif;
     padding-left: 0px;
     padding-right: 0px;
@@ -8,46 +12,47 @@
 .headline {
     color: #78797A;
 }
+
 .schedule-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 20px;
-  }
+}
 
-  .button-container {
+.button-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Updated */
-    width: 30%; /* Updated */
-  }
+    justify-content: flex-end;
+    width: 30%;
+}
 
-  body {
+body {
     font-family: 'Open Sans', sans-serif;
-  }
+}
 
-  .schedule-table {
+.schedule-table {
     width: 100%;
-    margin-left:2%;
+    margin-left: 2%;
     margin-bottom: 2%;
     border-collapse: collapse;
     float: left;
-  }
+}
 
-  .schedule-table th,
-  .schedule-table td,
-  .schedule-table td Stunde {
+.schedule-table th,
+.schedule-table td,
+.schedule-table td.Stunde {
     padding: 10px;
     text-align: center;
     border: 1px solid grey;
-  }
+}
 
-  .schedule-table th {
+.schedule-table th {
     background-color: lightgrey;
     font-weight: bold;
-  }
+}
 
-  .schedule-table input[type="text"] {
+.schedule-table input[type="text"] {
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
@@ -55,17 +60,17 @@
     border-radius: 4px;
     outline: none;
     text-align: center;
-  }
+}
 
-  .input-cell {
-  font-size: larger; 
-  }
+.input-cell {
+    font-size: larger;
+}
 
-  .schedule-table td.Stunde {
+.schedule-table td.Stunde {
     white-space: nowrap;
-  }
+}
 
-  .save-button {
+.save-button {
     padding: 10px 20px;
     background-color: #376b9f;
     color: white;
@@ -76,164 +81,26 @@
     left: 85%;
     top: 56%;
     margin-bottom: 20px;
-  }
+}
 
-  .save-button:hover {
+.save-button:hover {
     background-color: #9fcfef;
-  }
-.banner-container{
+}
+
+.banner-container {
     background-color: white;
     padding: 0%;
     display: flex;
     justify-content: right;
 }
-.Lehrerliste{
+
+.Lehrerliste {
     padding-left: 20px;
 }
 
-.copyright{
-    background-color: #376b9f;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    padding: 10px;
-}
-.header1 {
-    
-    padding-left: 20px;
-    padding-right: 50px;
-    background: white;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: light;
-    box-shadow: 10px, 10px, 15px, grey, outset;
-}
-
-.header1 img {
-    width: 260px;
-    display: inline-block;
-    margin: 0;
-}
-
-
-a {
-    color: grey;
-    text-decoration: none;
-    margin-left: 10px;
-    font-weight: light;
-}
-a:hover {
-    text-decoration: underline;
-    color: #376b9f;
-}
-a ul li:hover {
-    text-decoration: underline;
-    color: #376b9f;
-}
-::selection{ background-color: #9fcfef;}
-
-.Untertitel{
-    color: black;
-    font-size: 40px;
-}
-.text-container {
-    font-size: 16px;
-    padding-left: 20px;
-    position: relative;
-}
-.banner {
-    display: flex;
-    justify-content: left;
-    width: 80px;
-    margin-right: 20px;
-    padding-left:20px;
-}
-.h1{
-    font-size: 25pt;
-    text-decoration: none;
-    font-weight:lighter;
-    padding-left: 2%;
-    color: #376b9f;
-}
-.h2 {
-    font-weight: lighter;
-    font-size: 16pt;
-    color: grey; 
-    padding-left: 2%;
-    
-}
-
-
-.footer2{
-    display: flex;
-    align-items: bottom;
-    justify-content: left;
-    margin-top: 30%;
-    margin-bottom: 0%;
-    margin-left: 2%;
-}
-.Text1{
-    color:grey;
-   padding-left:2%;
-   margin-bottom:0%;
-}
-.test{
-    padding: 50px;
-    margin: 50px;
-    
-}
-.responsive{
-    display:flex;
-    justify-content: left;
-    font-weight: light;
-    padding-left:20px;
-}
-.Download-container1{
-    align-items: space-between;
-    margin-left: 1.8%;
-}
-.Download-container2{
-    align-items: left;
-}
-.Download-box{
-    display:flex;
-    justify-content: left;
-    margin-top:-2%;
-}
-.Owner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Lehrerliste{
-    display:flex;
-    justify-content: left;
-    margin-left: 2%;
-    margin-top: -1.5%;
-}
-.Lehrervornamen{
-    padding:0;
-    align-items: left;
-}
-.Lehrernachnamen{
-    padding:0;
-    align-items: space-between;
-    margin-left: -1.5%;
-}
-
-.test2{
-padding: 30px;
-margin: 20px;
-}
-.test2{
-    padding: 10px;
-    margin: 10px;
-    }
 .footer {
     padding: 20px 0;
     background-color: #fff;
-   
 }
 
 .footer .social {
@@ -242,7 +109,7 @@ margin: 20px;
     color: #4b4c4d;
 }
 
-.footer .social a{
+.footer .social a {
     font-size: 24px;
     color: inherit;
     border: 1px solid #ccc;
@@ -261,16 +128,13 @@ margin: 20px;
     background: url('Fotos/EP\ fertig.png') center / 65% no-repeat;
     vertical-align: middle;
     background-position: center 7px;
-    
 }
 
 .footer .social .RGM {
     background: url('Fotos/RGM\ fertig.png') center / 65% no-repeat;
     vertical-align: middle;
     background-position: center 9px;
-    
 }
-
 
 .footer .social a:hover {
     opacity: 0.9;
@@ -295,28 +159,279 @@ margin: 20px;
 .footer ul li {
     display: inline-block;
     padding: 0 15px;
-
 }
 
 .footer ul li a:hover {
     opacity: 1;
-
-        text-decoration: underline;
-        color: #376b9f;
-    
+    text-decoration: underline;
+    color: #376b9f;
 }
 
-.footer.copyrigth {
+.footer .copyrigth {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color:#aaa;
+    color: #aaa;
 }
-.List{
+
+.header1 {
+    padding-left: 20px;
+    padding-right: 50px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: light;
+    box-shadow: 10px, 10px, 15px, grey, outset;
+}
+
+.header1 img {
+    width: 260px;
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: light;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #376b9f;
+}
+
+a ul li:hover {
+    text-decoration: underline;
+    color: #376b9f;
+}
+
+::selection {
+    background-color: #9fcfef;
+}
+
+.Untertitel {
+    color: black;
+    font-size: 40px;
+}
+
+.text-container {
+    font-size: 16px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    justify-content: left;
+    width: 80px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.h1 {
+    font-size: 25pt;
+    text-decoration: none;
+    font-weight: lighter;
+    padding-left: 2%;
+    color: #376b9f;
+}
+
+.h2 {
+    font-weight: lighter;
+    font-size: 16pt;
+    color: grey;
+    padding-left: 2%;
+}
+
+.footer2 {
+    display: flex;
+    align-items: bottom;
+    justify-content: left;
+    margin-top: 30%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+}
+
+.Text1 {
+    color: grey;
+    padding-left: 2%;
+    margin-bottom: 0%;
+}
+
+.test {
+    padding: 50px;
+    margin: 50px;
+}
+
+.responsive {
+    display: flex;
+    justify-content: left;
+    font-weight: light;
+    padding-left: 20px;
+}
+
+.Download-container1 {
+    align-items: space-between;
+    margin-left: 1.8%;
+}
+
+.Download-container2 {
+    align-items: left;
+}
+
+.Download-box {
+    display: flex;
+    justify-content: left;
+    margin-top: -2%;
+}
+
+.Owner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Lehrerliste {
+    display: flex;
+    justify-content: left;
+    margin-left: 2%;
+    margin-top: -1.5%;
+}
+
+.Lehrervornamen {
+    padding: 0;
+    align-items: left;
+}
+
+.Lehrernachnamen {
+    padding: 0;
+    align-items: space-between;
+    margin-left: -1.5%;
+}
+
+.test2 {
+    padding: 30px;
+    margin: 20px;
+}
+
+.test2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.footer .social .EP {
+    background: url('Fotos/EP\ fertig.png') center / 65% no-repeat;
+    vertical-align: middle;
+    background-position: center 7px;
+}
+
+.footer .social .RGM {
+    background: url('Fotos/RGM\ fertig.png') center / 65% no-repeat;
+    vertical-align: middle;
+    background-position: center 9px;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    color: #376b9f;
+}
+
+.footer .copyrigth {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.List {
     color: grey;
 }
 
-.text{
+.text {
     margin-left: 2%;
     color: grey;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header1 img {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    .Links {
+        flex-direction: column;
+    }
+
+    .Owner img {
+        width: 40%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Owner img {
+        width: 80%;
+        padding: 5px;
+    }
 }

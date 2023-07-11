@@ -179,6 +179,52 @@ a ul li:hover {
     }
   }
   
+  /* Mobile Styles */
+
+@media (max-width: 768px) {
+    .header1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header1 img {
+      margin-bottom: 20px;
+    }
+  
+    .header1 nav {
+      margin-bottom: 20px;
+    }
+  
+    .h1 {
+      font-size: 20pt;
+    }
+  
+    .schedule-table {
+      font-size: 12pt;
+    }
+  
+    .save-button {
+      left: 75%;
+      top: 56%;
+    }
+  }
+  
+  /* Tablet Styles */
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .header1 nav {
+      font-size: 14pt;
+    }
+  }
+  
+  /* Desktop Styles */
+  
+  @media (min-width: 1025px) {
+    .header1 nav {
+      font-size: 16pt;
+    }
+  }
+  
   /* Tablet Styles */
   
   @media (min-width: 769px) and (max-width: 1024px) {

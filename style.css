@@ -8,75 +8,59 @@
 .headline {
     color: #78797A;
 }
-
-/* Restlicher CSS-Code */
-
-/* Restlicher CSS-Code */
-
-/* Restlicher CSS-Code */
-
+  
 @media only screen and (max-width: 600px) {
-    /* Header */
-    .header1 {
-      flex-wrap: wrap;
-      padding: 10px;
+    .container {
+      flex-direction: column; /* Geändert */
+      align-items: stretch; /* Geändert */
     }
   
-    .header1 img {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .Links {
-      flex-basis: 100%;
-      text-align: center;
-    }
-  
-    .Links a {
-      display: block;
-      margin-bottom: 10px;
-    }
-  
-    /* Stundenplan */
-    .schedule-container {
-      margin: 20px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    .table-wrapper {
-      overflow-x: auto;
+    .button-container {
+      justify-content: flex-start; /* Geändert */
+      width: 100%; /* Geändert */
+      margin-bottom: 10px; /* Geändert */
     }
   
     .schedule-table {
       width: 100%;
-      margin: 0;
-      font-size: 14px;
-    }
-  
-    .schedule-table th,
-    .schedule-table td {
-      padding: 5px;
+      margin-left: 0; /* Geändert */
+      margin-bottom: 10px; /* Geändert */
+      float: none; /* Geändert */
     }
   
     .save-button {
-      margin-top: 20px;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      margin-bottom: 20px;
-      position: static;
+      left: auto; /* Geändert */
+      top: auto; /* Geändert */
+      margin-bottom: 10px; /* Geändert */
     }
   
-    /* Footer */
-    .footer .list li {
-      padding: 5px;
+    .Lehrerliste {
+      display: flex;
+      flex-wrap: wrap; /* Geändert */
+      justify-content: center; /* Geändert */
+      align-items: flex-start; /* Geändert */
+    }
+  
+    .Lehrernachnamen,
+    .Lehrervornamen,
+    .Fächer {
+      width: 100%; /* Geändert */
+      padding: 0; /* Geändert */
+    }
+  
+    .Lehrernachnamen h2,
+    .Lehrervornamen h2,
+    .Fächer h2 {
+      display: block; /* Geändert */
+      margin-bottom: 5px; /* Geändert */
+    }
+  
+    .Lehrernachnamen p,
+    .Lehrervornamen p,
+    .Fächer p {
+      margin: 0;
     }
   }
-  
-  
   
 .schedule-container {
     display: flex;

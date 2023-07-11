@@ -9,6 +9,8 @@
     color: #78797A;
 }
 
+/* Restlicher CSS-Code */
+
 @media only screen and (max-width: 600px) {
     /* Header */
     .header1 {
@@ -52,17 +54,20 @@
     }
   
     .save-button {
-        display: block;
-        margin: 20px auto;
-        width: 80%;
-      }
-        
+      margin-top: 20px;
+      position: static;
+      width: 80%;
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
   
     /* Footer */
     .footer .list li {
       padding: 5px;
     }
   }
+  
+  
 .schedule-container {
     display: flex;
     align-items: flex-start;

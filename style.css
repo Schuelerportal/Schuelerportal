@@ -52,12 +52,11 @@
     }
   
     .save-button {
-        margin-top: 20px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        display: block;
+        margin: 20px auto;
         width: 80%;
-    }    
+      }
+        
   
     /* Footer */
     .footer .list li {

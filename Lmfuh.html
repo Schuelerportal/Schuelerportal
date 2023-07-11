@@ -42,7 +42,7 @@ footer {
 @media only screen and (max-width: 600px) {
   .Lehrerliste {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ändere die Anzahl der Spalten entsprechend deinen Anforderungen */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
 
@@ -75,6 +75,13 @@ footer {
   .Lehrervornamen p,
   .Fächer p {
     margin: 0;
+  }
+  
+  .Lehrernachnamen,
+  .Lehrervornamen,
+  .Fächer {
+    flex-basis: 0;
+    flex-grow: 1;
   }
 }
 

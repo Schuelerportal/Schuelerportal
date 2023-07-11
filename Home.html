@@ -36,6 +36,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .site-links a {
@@ -52,7 +53,6 @@
         .site-links a:hover {
             text-decoration: underline;
             color: #376b9f;
-
         }
 
         .footer2 {
@@ -83,6 +83,29 @@
             color: #555555;
             font-weight: 400;
             margin-bottom: 40px;
+        }
+
+        /* Anpassungen für mobile Geräte */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+
+            .site-links a {
+                font-size: 16px;
+            }
+
+            .Text1 {
+                font-size: 16px;
+            }
+
+            .heading {
+                font-size: 28px;
+            }
+
+            .subheading {
+                font-size: 18px;
+            }
         }
     </style>
 </head>

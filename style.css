@@ -53,10 +53,11 @@
   
     .save-button {
         margin-top: 20px;
-        position: static;
-        width: 100%;
-        text-align: center;
-      }      
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }    
   
     /* Footer */
     .footer .list li {

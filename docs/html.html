@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anmeldeseite Schülerportal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+   body {
+     font-family: 'Open Sans', Arial, sans-serif;
+     background-color: #f2f2f2;
+     margin: 0;
+     padding: 0;
+     transition: background-color 0.3s ease;
+   }
+
+   .container {
+     max-width: 400px;
+     margin: 100px auto;
+     background-color: #fff;
+     padding: 40px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s ease;
+   }
+
+   h1 {
+     text-align: center;
+     color: #376b9f;
+     font-size: 24px;
+     margin-bottom: 30px;
+     transition: color 0.3s ease;
+   }
+
+   label {
+     display: block;
+     margin-bottom: 10px;
+     color: #666;
+     font-size: 14px;
+     transition: color 0.3s ease;
+   }
+
+   input[type="text"],
+   input[type="password"] {
+     width: 100%;
+     padding: 12px;
+     border-radius: 4px;
+     border: 1px solid #ccc;
+     background-color: #f5f5f5;
+     margin-bottom: 20px;
+     font-size: 16px;
+     box-sizing: border-box;
+     transition: background-color 0.3s ease;
+   }
+
+   button {
+     background-color: #376b9f;
+     color: #fff;
+     border: none;
+     padding: 12px 20px;
+     border-radius: 4px;
+     cursor: pointer;
+     width: 100%;
+     font-size: 16px;
+     transition: background-color 0.3s ease;
+   }
+
+   button:hover {
+     background-color: #1e4771;
+   }
+   
+   @media (prefers-color-scheme: dark) {
+     body {
+       background-color: #111;
+     }
+     
+     .container {
+       background-color: #222;
+     }
+     
+     h1,
+     label {
+       color: #fff;
+     }
+     
+     input[type="text"],
+     input[type="password"] {
+       background-color: #333;
+       color: #fff;
+     }
+   }
+   
+   .toggle-button {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 40px;
+     height: 40px;
+     background-color: #fff;
+     border: none;
+     border-radius: 50%;
+     font-size: 14px;
+     color: #333;
+     cursor: pointer;
+     transition: color 0.3s ease;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .toggle-button:hover {
+     color: #376b9f;
+   }
+   
+   .dark-mode {
+     background-color: #111;
+   }
+   
+   .dark-mode .container {
+     background-color: #222;
+   }
+   
+   .dark-mode h1,
+   .dark-mode label {
+     color: #fff;
+   }
+   
+   .dark-mode input[type="text"],
+   .dark-mode input[type="password"] {
+     background-color: #333;
+     color: #fff;
+   }
+   
+   .dark-mode button {
+     background-color: #376b9f;
+   }
+   
+   .dark-mode button:hover {
+     background-color: #1e4771;
+   }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Schülerportal</h1>
+<form id="loginForm">
+<label for="username">Benutzername:</label>
+<input type="text" id="username" name="username" required>
+
+<label for="password">Passwort:</label>
+<input type="password" id="password" name="password" required>
+
+<button type="button" onclick="login()">Anmelden</button>
+</form>
+</div>
+
+<button class="toggle-button" onclick="toggleDarkMode()">☀️🌙</button>
+
+<script src="script.js"></script>
+<script>
+   function toggleDarkMode() {
+     const body = document.querySelector('body');
+     body.classList.toggle('dark-mode');
+   }
+</script>
+
+</body>
+</html>

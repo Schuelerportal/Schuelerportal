@@ -52,10 +52,11 @@
     }
   
     .save-button {
-      margin-top: 20px;
-      position: static;
-      width: 100%;
-    }
+        margin-top: 20px;
+        position: static;
+        width: 100%;
+        text-align: center;
+      }      
   
     /* Footer */
     .footer .list li {

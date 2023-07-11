@@ -8,6 +8,60 @@
 .headline {
     color: #78797A;
 }
+
+@media only screen and (max-width: 600px) {
+    /* Header */
+    .header1 {
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+  
+    .header1 img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .Links {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    .Links a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    /* Stundenplan */
+    .schedule-container {
+      margin: 20px 0;
+    }
+  
+    .table-wrapper {
+      overflow-x: auto;
+    }
+  
+    .schedule-table {
+      width: 100%;
+      margin: 0;
+      font-size: 14px;
+    }
+  
+    .schedule-table th,
+    .schedule-table td {
+      padding: 5px;
+    }
+  
+    .save-button {
+      margin-top: 20px;
+      position: static;
+      width: 100%;
+    }
+  
+    /* Footer */
+    .footer .list li {
+      padding: 5px;
+    }
+  }
 .schedule-container {
     display: flex;
     align-items: flex-start;
@@ -74,7 +128,7 @@
     cursor: pointer;
     position: absolute;
     left: 85%;
-    top: 56%;
+    top: 57%;
     margin-bottom: 20px;
   }
 
@@ -142,104 +196,6 @@ a ul li:hover {
     padding-left: 20px;
     position: relative;
 }
-
-/* Mobile Styles */
-
-@media (max-width: 768px) {
-    .header1 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .header1 img {
-      margin-bottom: 20px;
-    }
-  
-    .header1 nav {
-      margin-bottom: 20px;
-    }
-  
-    .Owner img {
-      width: 40%;
-    }
-  
-    .footer .list {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .footer .list li {
-      padding: 5px 10px;
-    }
-  
-    .footer.copyrigth {
-      margin-top: 20px;
-    }
-  }
-  
-  /* Mobile Styles */
-
-@media (max-width: 768px) {
-    .header1 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .header1 img {
-      margin-bottom: 20px;
-    }
-  
-    .header1 nav {
-      margin-bottom: 20px;
-    }
-  
-    .h1 {
-      font-size: 20pt;
-    }
-  
-    .schedule-table {
-      font-size: 12pt;
-    }
-  
-    .save-button {
-      left: 75%;
-      top: 56%;
-    }
-  }
-  
-  /* Tablet Styles */
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .header1 nav {
-      font-size: 14pt;
-    }
-  }
-  
-  /* Desktop Styles */
-  
-  @media (min-width: 1025px) {
-    .header1 nav {
-      font-size: 16pt;
-    }
-  }
-  
-  /* Tablet Styles */
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .Owner img {
-      width: 25%;
-    }
-  }
-  
-  /* Desktop Styles */
-  
-  @media (min-width: 1025px) {
-    .Owner img {
-      width: 15%;
-    }
-  }
 .banner {
     display: flex;
     justify-content: left;

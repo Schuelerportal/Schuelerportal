@@ -11,6 +11,8 @@
 
 /* Restlicher CSS-Code */
 
+/* Restlicher CSS-Code */
+
 @media only screen and (max-width: 600px) {
     /* Header */
     .header1 {
@@ -36,6 +38,9 @@
     /* Stundenplan */
     .schedule-container {
       margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   
     .table-wrapper {
@@ -55,9 +60,10 @@
   
     .save-button {
       margin-top: 20px;
-      position: static;
       width: 80%;
-      margin-left: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
       margin-bottom: 20px;
     }
   

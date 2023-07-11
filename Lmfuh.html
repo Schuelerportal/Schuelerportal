@@ -40,28 +40,23 @@ footer {
   clear: both; /* Stelle sicher, dass der Footer unter allen anderen Elementen angezeigt wird */
 }
 @media only screen and (max-width: 600px) {
+  .Lehrerliste {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ändere die Anzahl der Spalten entsprechend deinen Anforderungen */
+    gap: 10px;
+  }
+
+  .Lehrerliste h2 {
+    margin-top: 0;
+  }
+
   .Lehrernachnamen,
   .Lehrervornamen,
   .Fächer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0 10px;
   }
-  
-  .Lehrernachnamen h2,
-  .Lehrervornamen h2,
-  .Fächer h2 {
-    margin-top: 0;
-  }
-  
-  .Lehrernachnamen span,
-  .Lehrervornamen span,
-  .Fächer span {
-    display: block;
-    margin-bottom: 10px;
-  }
 }
+
 
 
 </style>

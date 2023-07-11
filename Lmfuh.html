@@ -42,7 +42,7 @@ footer {
 @media only screen and (max-width: 600px) {
   .Lehrerliste {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
 
@@ -54,15 +54,6 @@ footer {
   .Lehrervornamen,
   .Fächer {
     padding: 0 10px;
-    flex-basis: 0;
-    flex-grow: 1;
-  }
-  
-  .Lehrernachnamen,
-  .Lehrervornamen,
-  .Fächer {
-    display: flex;
-    flex-direction: column;
   }
   
   .Lehrernachnamen h2,
@@ -75,13 +66,6 @@ footer {
   .Lehrervornamen p,
   .Fächer p {
     margin: 0;
-  }
-  
-  .Lehrernachnamen,
-  .Lehrervornamen,
-  .Fächer {
-    flex-basis: 0;
-    flex-grow: 1;
   }
 }
 
